@@ -34,6 +34,8 @@ jobs:
       with:
         image: sujith126/demo-app
         registry: docker.io
+        username: ${{ secrets.DOCKER_USERNAME }}
+        password: ${{ secrets.DOCKER_PASSWORD }}
   build-java-Prod:
     environment: Prod
     runs-on: ubuntu-latest
